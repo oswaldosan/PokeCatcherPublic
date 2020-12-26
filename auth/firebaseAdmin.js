@@ -5,7 +5,7 @@ export const verifyIdToken = (token) => {
   if (!admin.apps.length) {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      databaseURL: "pokemoncatcher-518ff.appspot.com",
+      databaseURL: process.env.storageBucket,
     });
   }
 
