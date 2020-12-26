@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto&display=swap');
+
+*
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.cardBody h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.cardBody  p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+
+
+.blueback {
+    width: 100vw;
+    height: 100vh;
+    background-color: #192935;
+}
+
+.wrapper
+{
+   
+    background-color: #192935;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+   transform: translate(-50%, -50%);
+
+}
+
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50% ;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid;
+  animation: frames .8s  linear 0s infinite;
+}
+
+.pokeball:after{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background-color: red;
+  border-bottom: 4px solid;
+  top: -4px
+}
+
+.pokeball:before{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height:10px;
+  border: 4px solid;
+  border-radius: 50%;
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+}
+
+/* AnimationFrames */
+@keyframes frames{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.pokeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+
+.pokeCard {
+    font-family: 'Abel';
+    padding: 00px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+.cardBody {
+    padding-top: 3px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+
+.thePoekmonBackground {
+    border-bottom: 1px solid #ccc;
+    padding: 60px;
+}
+
+.thePoekmonBackground img{
+    transition: all 0.8s ease;
+    width: 80%;
+}
+.thePoekmonBackground img:hover{
+    transform: scale(0.8);
+}
+
+
+.pokeHeader {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-shadow: 1px 1px 3px darkslategray;
+}
+
+
+
+.pageHeader {
+    font-family: 'Abel';
+    background-color: #192935;
+    color: white;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    border-bottom: 3px solid red;
+}
+
+.logoName {
+    cursor: pointer;
+    position: absolute;
+    font-size: 44px;
+    top: 13px;
+    left: 15px;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 15px;
+}
+
+.navigation a {
+   color: white;
+   font-size: 25px;
+   margin-left: 25px;
+   text-decoration: none;
+   transition: all 0.6s ease;
+}
+
+.headlinks {
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all 0.6s ease;
+ }
+
+.navigation a:hover {
+    color: red;
+  
+ }
+
+
+ /* pokemon Types */
+
+ .bug {
+     background-color: yellowgreen;
+ }
+
+ .grass {
+    background-color: green;
+}
+
+.fire {
+    background-color: red;
+}
+
+.water {
+    background-color: blue;
+}
+
+.normal {
+    background-color: #c4c0b7;
+}
+
+.electric {
+    background-color: #f8b713;
+}
+
+.poison {
+    background-color: purple;
+}
+
+.ground {
+    background-color: brown;
+}
+
+.psychic {
+    background-color: #e8467f;
+}
+
+.flying {
+    background-color: #99aaf8;
+}
+
+.dark {
+    background-color: #271f1b;
+}
+
+.ghost {
+    background-color: #48499d;
+}
+
+.ice {
+    background-color: #76d7f7;
+}
+
+.steel {
+    background-color: #b6b5c5;
+}
+
+.fairy {
+    background-color: lightpink;
+}
+
+.fighting {
+    background-color: black;
+}
+
+.rock {
+    background-color: gray;
+}
+
+.mypokeball {
+    display: flex;
+    position: absolute;
+    left: 41%;
+    top: 5%;
+}
+
+.mypokeball h4 {
+    padding-top: 24px;
+}
+
+.catchButton {
+    cursor: pointer;
+    padding: 8px;
+    width: 70px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 50%, rgba(255,0,0,1) 100%);
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    height: 60px;
+    color: white;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.inputSearch {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.inputSearch input {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    font-weight: 600;
+    padding-left: 20px;
+    font-size: 24px;
+    color: teal;
+}
+
+.themodal {
+    position: relative;
+    z-index: 9;
+    width: 450px;
+    height: auto;
+    top: 30%;
+    left: 50%;
+    margin-left: -225px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
+
+.themodal img {
+    margin: 0 auto;
+}
+
+.hiddenModal {
+    display: none;
+}
+
+.closeModal {
+    position: absolute;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 600;
+    top: 5px;
+    right: 15px;
+}
+
+.notAuth {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    background-color: #192935;
+}
+
+.notAuth a{
+    cursor: pointer;
+    color: tomato;
+    font-size: 36px;
+}
+
+.authNotif {
+    padding-top: 15%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.authNotif h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.userWelcome {
+    position: absolute;
+    top: 84px;
+    right: 20px;
+    color: black;
+}
+
+.loginWave {
+    background-color:royalblue;
+    color: white;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+#email-helper-text {
+    color: #ccc;
+}
+
+.loginball {
+    position: absolute;
+    width: 100px;
+    top: 80px;
+    left: 50%;
+    margin-left: -290px;
+}
+
+.freepoke {
+    width: 220px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: darkred;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+} 
+
+.totalpokemons {
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.mobileMenu {display: none;}
+.MobileNavigation {display: none;}
+
+
+@media only screen and (max-width: 750px) {
+   .navigation {display: none}
+   .mobileMenu {display: block;}
+   .mypokeball {
+    position: relative;
+    left: 0%;
+    top: 73px;
+    color: white;
+    padding: 2px;
+    padding-left: 20px;
+    background-color: brown;
+}
+   .pokeGrid {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    row-gap: 1em;
+}
+.logoName {
+    cursor: pointer;
+    position: absolute;
+    font-size: 35px;
+    top: 9px;
+    left: 7px;
+}
+.userWelcome {
+    position: absolute;
+    top: 50px;
+    left: 9px;
+    color: white;
+    font-size: 10px;
+}
+.inputSearch {
+    margin-top: 159px;
+}
+.inputSearch input {
+     border: 1px solid;
+}
+.mypokeball h4 {
+    padding-top: 27px;
+    font-size: 12px;
+}
+.mobileMenu {
+    cursor: pointer;
+    width: 28px;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+.menuBar1 {
+   width: 100%;
+   background-color: #fff;
+   height: 4px;
+   margin-bottom: 5px;
+}
+.menuBar2 {
+    width: 80%;
+    background-color: #fff;
+    height: 4px;
+    margin-bottom: 5px;
+ }
+
+ .MobileNavigation{
+     display: block; 
+     margin-left: -1400px; 
+     z-index: 9999;  
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: black;
+ }
+
+ .MobileNavigation{
+    display: block; 
+    margin-left: -1400px; 
+    z-index: 9999;  
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.MobileNavigation a{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-bottom: 1px solid red;
+
+}   
+
+.headlinks {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    margin-left: 0;
+}
+
+
+.pageHeader {
+    font-family: 'Abel';
+    background-color: #192935;
+    color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    border-bottom: 3px solid red;
+}
+
+}

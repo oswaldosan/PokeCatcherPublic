@@ -1,0 +1,28 @@
+{
+  "name": "pokemoncatcher",
+  "version": "0.1.0",
+  "author": "Oswaldo Sanchez",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@chakra-ui/react": "^1.0.4",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "axios": "^0.21.1",
+    "emotion-theming": "^11.0.0",
+    "firebase": "^8.2.1",
+    "firebase-admin": "^9.4.2",
+    "framer-motion": "^3.1.1",
+    "next": "^10.0.0",
+    "nookies": "^2.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-spring": "^8.0.27"
+  }
+}
